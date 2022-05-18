@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Personal Web - Nurul Anisah</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="left-side">
+        <a href="index.html"
+          ><img src="assets/logo.png" alt="logo" width="50px" height="35px"
+        /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-project.html">My Project</a></li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="contact-me.html">Contact Me</a>
+      </div>
+    </nav>
+    <main class="container-contact">
+      <h1 class="header">Get In Touch</h1>
+      <form>
+        <label for="input-name">Name</label>
+        <input type="text" id="input-name" placeholder="Your name.." />
+
+        <label for="input-email">Email</label>
+        <input type="email" id="input-email" placeholder="example@.com.." />
+
+        <label for="input-phone">Phone Number</label>
+        <input type="text" id="input-phone" placeholder="081xxx.." />
+
+        <label for="choose-subject">Subject</label>
+        <select id="choose-subject" name="country">
+          <option value="Talk">Talk</option>
+          <option value="Let's Collaboration">Let's Collaboration</option>
+          <option value="Create Project">Create Project</option>
+        </select>
+
+        <label for="input-message">Your Message</label>
+        <textarea id="input-message" placeholder="Write something.."></textarea>
+
+        <button onclick="submitForm()" type="button" class="btn-submit">submit</button>
+      </form>
+    </main>
+  </body>
+</html>

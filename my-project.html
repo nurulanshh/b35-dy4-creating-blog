@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <title>Personal Web - Nurul Anisah</title>
+    <link rel="stylesheet" href="style.css" />
+  
+  </head>
+  <body>
+
+<!-- NavBar -->
+
+    <nav>
+      <div class="left-side">
+        <a href="index.html"
+          ><img src="assets/logo.png" alt="logo" width="50px" height="35px"
+        /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-project.html">My Project</a></li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="contact-me.html">Contact Me</a>
+      </div>
+    </nav>
+
+<!-- My project -->
+<!-- Form -->
+    
+    <div class="container-my-project-form">
+      <h1 class="header-form-project">Add My Project</h1> 
+      <form>     
+        <div class="Text-project">
+          <label for="input-project-name">Project Name</label>
+          <input type="text" id="input-prject-name" placeholder="Your Project Name.." />
+        </div>
+        <div class="date">  
+          <div class="date-left-side">
+            <label for="input-start-date">Start Date</label>
+            <input type="date" id="input-start-date"/>
+          </div>
+          <div class="date-right-side">
+            <label for="input-end-date">End Date</label>
+            <input type="date" id="input-end-date"/>
+          </div>
+        </div>
+      
+        <div>  
+          <label for="input-description">Description</label>
+          <textarea type="text" id="input-description" placeholder="Write something.."></textarea>
+        </div>
+        
+        <div class="check">
+          <label>
+            Technologies
+          </label>
+
+          <div class="container-checkbox">
+
+            <div class="divkiri">
+              <label for="c1" class="option_item"><input type="checkbox" name="color" value="node-js.png" id="c1">Node
+                JS</label>
+              <label for="c2" class="option_item"><input type="checkbox" name="color" value="reactjs.png"
+                  id="c2">React JS</label>
+            </div>
+
+            <div class="divkanan">
+              <label for="c3" class="option_item"><input type="checkbox" name="color" value="js.png"
+                  id="c3">Javascript</label>
+              <label for="c4" class="option_item"><input type="checkbox" name="color" value="typescript.png"
+                  id="c4">TypeScript</label>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <label>Upload Image</label>
+          <div class="input-blog-image-group">
+            <label for="input-blog-image">
+              <div class="choose">choose</div>
+          <div class="img">  
+            <img src="assets/file.png" alt="file"/>
+            </label>
+            <input type="file" id="input-blog-image" hidden />
+          </div>
+          </div>
+        </div>
+        <div> 
+          <button onclick="addBlog()" type="button" class="btn-submit-my-project">submit</button>
+        </div>
+      </form> 
+        
+    </div>  
+
+<!-- dynamic content would be here -->
+     <br>
+      <br>
+   
+   /*<div class="container-my-project">
+    <h1 class="header-my-project">My Project</h1> 
+            
+        <div id="contents" class="flex-container-my-project">
+   
+          <div class="project-item">
+            <div class="my-project-img">
+               <img src="assets/my-project-img-detail.png" alt="cover">
+            </div>
+          <div class="detail-project">
+          <h3>
+            <a href="my-project-detail.html" target="_blank">Dumbways Mobile App - 2021</a>
+          </h3>
+          <div class="detail-project-content">
+            Duration : 3 month
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam minima in culpa itaque deleniti unde
+             quae aperiam ex architecto, blanditiis eveniet.
+          </p>
+            <div class="logo">
+                  <div class="nodejs">
+                    <img src="assets/node-js.png" alt="ns" id="nss">
+                  </div>
+                  <div class="reactjs">
+                    <img src="assets/reactjs.png" alt="rs" id="rss">
+                  </div>
+                  <div class="javascript">
+                    <img src="assets/js.png" alt="js" id="jss">
+                  </div>
+                  <div class="typescript">
+                    <img src="assets/typescript.png" alt="ts" id="tss">
+                  </div>    
+            </div>                
+            <div class="btn-group">
+              <button class="btn-edit">edit</button>
+              <button class="btn-delete">delete</button>
+             </div> 
+          </div>     
+          </div>
+        </div>
+      </div>*/
+
+   </div>
+  <script src="my-project.js"></script>
+ </body>
+</html>
