@@ -229,7 +229,7 @@ textarea {height: 100px;}
   background-color: #0a0a0a;
 }
 
-/* Blog Form */
+/* Project Form */
 
 .container-my-project-form {
   margin: auto;
@@ -311,12 +311,12 @@ select, textarea {
 textarea {height: 100px;}
 textarea[type="text-description"] {height: 100px;}
 
-.container-my-project-form .input-blog-image-group label {
+.container-my-project-form .input-project-image-group label {
   font-size: 15px;
   display: flex;
 }
 
-.container-my-project-form .input-blog-image-group label {
+.container-my-project-form .input-project-image-group label {
   cursor: pointer;
   flex: 50%;
   align-items: center;
@@ -388,7 +388,7 @@ textarea[type="text-description"] {height: 100px;}
   flex-wrap: wrap;
 }
 
-/* Blog list */
+/* project list */
 
 .project-item {
   width: 25%;  
@@ -527,7 +527,7 @@ textarea[type="text-description"] {height: 100px;}
 
 
 
-/* Blog Detail */
+/* project Detail */
 
 .my-project-detail {
   display: flex;
