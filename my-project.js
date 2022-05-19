@@ -1,6 +1,6 @@
-let blogs = [];
+let projects = [];
 
-function addBlog() {
+function addproject() {
   
   let title = document.getElementById('input-prject-name').value;
   let content = document.getElementById('input-description').value;
@@ -8,12 +8,12 @@ function addBlog() {
   let startdate = document.getElementById('input-start-date').value;
   let stopdate = document.getElementById('input-end-date').value;
 
-  let image = document.getElementById('input-blog-image').files[0];
+  let image = document.getElementById('input-project-image').files[0];
   image = URL.createObjectURL(image);
 
   let ceklis = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(item => item.value);
 
-  let blog = {
+  let project = {
     author: 'Nurul Anisah',
     title,
     startdate,
@@ -23,35 +23,35 @@ function addBlog() {
     ceklis,
   };
 
-  blogs.push(blog);
-  renderBlogs();
+  projects.push(project);
+  renderprojects();
 }
 
 
-function renderBlogs() {
+function renderprojects() {
 
-  lengthData = blogs.length;
-  let blogContainer = document.getElementById("contents");
-  blogContainer.innerHTML = firstBlogContent();
+  lengthData = projects.length;
+  let projectContainer = document.getElementById("contents");
+  projectContainer.innerHTML = firstProjectContent();
 
   let i = 0;
   for (i; i < lengthData; i++) {
 
-    let icons = blogs[i].ceklis.map(value => `<img src="assets/${value}">`)
+    let icons = projects[i].ceklis.map(value => `<img src="assets/${value}">`)
    
-    blogContainer.innerHTML += `
+    projectContainer.innerHTML += `
         <div class="project-item">
         <div class="my-project-img">
-          <img src="${blogs[i].image}" alt="" />
+          <img src="${projects[i].image}" alt="" />
         </div>
         <div class="detail-project">
           <h3>
-            <a href="my-project-detail.html" target="_blank">${blogs[i].title}</a>
+            <a href="my-project-detail.html" target="_blank">${projects[i].title}</a>
           </h3>
           <div class="detail-project-content">
-            Duration : ${blogs[i].startdate, blogs[i].stopdate}
+            Duration : ${projects[i].startdate, projects[i].stopdate}
           </div>
-          <p>${blogs[i].content}</p>
+          <p>${projects[i].content}</p>
           
           <div class="logo">
           <div class="nodesj">
@@ -70,7 +70,7 @@ function renderBlogs() {
 }
 
   // Non Looping 2x
-  function firstBlogContent() {
+  function firstProjectContent() {
     return `<div class="project-item">
     <div class="my-project-img">
       <img src="assets/my-project-img-detail.png" alt="cover" />
